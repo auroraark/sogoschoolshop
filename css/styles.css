@@ -1,0 +1,285 @@
+body{
+  color: black;
+  font-family: Verdana,sans-serif;
+  font-size:16px;
+  margin: 0;
+}
+
+/*OK*/
+header{
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/*OK*/
+/*ヘッダーロゴの調整*/
+.header-logo{
+background-color:#ff0000;
+float:left;
+font-size:36px;
+padding: 20px 30px;
+}
+
+/*ここから*/
+/*メインエリアの大きさ調整*/
+.main{
+ padding:100px 80px;
+}
+
+/*「for all staffs」の文字サイズ調整*/
+.copy-container h1{
+font-size:80px;
+}
+
+/*「学生服売場」タイトルの文字サイズ*/
+.copy-container h2{
+font-size:30px;
+}
+
+/*「学生服売場」のオレンジ色*/
+.copy-container span{
+color:orange;
+}
+
+/*制服写真の大きさ調整*/
+.contents-item img{
+height:300px;
+width:240px;
+}
+
+/*「取扱い校多数」の下線と余白の調整*/
+.section-title{
+border-bottom :2px solid #dee7ec;
+font-size:28px;
+padding-bottom:15px;
+margin-bottom:50px;
+}
+
+/*制服写真エリアの高さ調整*/
+.contents{
+height:600px;
+/*制服写真エリアの上の余白の調整*/
+margin-top:100px;
+}
+
+/*制服写真の左からの横並び*/
+.contents-item{
+float:left;
+margin-right:40px;
+}
+
+/*制服写真のタイトル文字と余白の調整*/
+.contents-item p{
+font-size:24px;
+margin-top:30px;
+text-align: center;
+}
+
+/*問い合わせフォームエリアの余白調整*/
+contact-form{
+padding-top:100px;
+}
+
+/*問い合わせフォームの調整*/
+input,textarea{
+/*width:400px;*/
+margin-top:10px;
+margin-bottom:10px;
+/*padding:20px;*/
+/*border:1px solid #dee7ec;*/
+}
+
+.contact-submit{
+background-color:#dee7ec;
+color:#889eab;
+}
+
+.footer{
+  background-color: #2f5167;
+  color:#fff;
+  height:100px;
+  padding:40px 40px;
+}
+
+.footer-logo{
+float:left;
+font-size:28px;
+padding: 20px 30px;
+}
+
+.footer-list{
+float:right;
+color:#fff;
+}
+
+.footer-list li{
+padding-bottom:20px;
+}
+
+.footer-list li a{
+color:#fff;
+}
+
+.header-gazou img{
+  width: 100%;
+  height:50%;
+}
+
+.header-gazou{
+  position: relative;
+}
+
+.header-gazou p{
+  position: absolute;
+  top:15%;
+  left: 15%;
+  border:3px solid white;
+  border-radius:15px;
+  background-color: skyblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom:5px;
+  color:fff;
+  font-size: 4em;
+}
+
+
+img{
+height:300px;
+width:500px;
+}
+
+
+newgaku_index.html section{
+text-align:center;
+}
+
+
+h1{
+width:1000px;
+margin:50px auto;
+color:white;
+text-align:center;
+margin-top:30px;
+margin-bottom:20px;
+}
+
+h2{
+color:white;
+text-align:center;
+width:700px;
+margin: 50px auto 20px;
+border-radius:10px;
+}
+
+h3{
+text-align:center;
+margin-top:30px;
+}
+
+
+h1.koko{
+background-color:#55acee;
+box-shadow:2px 2px #0431b4;
+}
+
+h1.kochu{
+background-color:#3b5998;
+box-shadow:2px 2px #0B0B3B;
+}
+
+h1.kensaku,h2.kensaku{
+background-color:pink;
+box-shadow:2px 2px #ff3399;
+}
+
+
+
+h1.shigaku,h2.shigaku{
+background-color:#239b76;
+box-shadow:2px 2px #0B3B0B;
+}
+
+
+
+
+/*ここまで*/
+/*リストのスタイル*/
+ul{
+list-style:none;
+}
+
+
+.header-list,.header-nav li{
+list-style:none;
+text-decoration:none;
+display:inline;
+width:120px;
+height:40px;
+padding: 10px 20px;
+background-color: skyblue;
+margin-bottom:10px;
+margin-right:5px;
+border-radius:30%;
+}
+
+.header-list li{
+float:left;
+padding:33px 20px;
+}
+
+a{
+text-decoration: none;
+}
+
+a:hover{
+color:red;
+text-decoration:underline
+}
+
+header .btn{
+border-radius:15px;
+}
+
+h1{
+padding-left:20px;
+}
+
+
+.hinichi,.chuko,.zokusei{
+text-align:center;
+}
+
+/*表のスタイル*/
+table,th,td{
+border:solid 1px black;
+border-collapse:collapse;
+}
+
+th,td{
+padding:5px 20px;
+}
+
+.nouki{
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.haichi{
+text-align:center;
+}
+
+.submit-button input{
+width:150px;
+height:50px;
+}
+
+table input[type="text"]{
+font-size:1.5em;
+width:1.2em;
+}
+
+select{
+font-size:1.5em;
+}

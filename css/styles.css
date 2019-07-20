@@ -255,11 +255,17 @@ th,td{
   color:#6e6e6e;
 }
 
+.gakko{
+ margin-bottom: 20px;
+}
+
 .shigaku,.kochu,.koko{
   width: 70%;
-  margin:0 auto 20px;
+  margin:0 auto;
   height: 450px;
   position: relative;
+  border:1px solid #bdbdbd;
+  border-bottom: 0;
 }
 
 .gakko p{
@@ -270,6 +276,13 @@ th,td{
   font-weight: bold;
   color:#fff;
 }
+
+.gakko-list{
+      border:1px solid #bdbdbd;
+      width: 70%;
+      margin: 0 auto ;
+      padding:20px;
+    }
 
 .gakko li{
   color:#6e6e6e;

@@ -1,53 +1,329 @@
 body{
-  color: black;
-  font-family: Verdana,sans-serif;
+  font-family:Arial,verdana,sans-serif;
   font-size:16px;
-  margin: 0;
+  margin:0;
 }
 
-/*OK*/
+li{
+  list-style-type:none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+/*ヘッダー*/
+
 header{
+  background-color: #013ADF;
+  height: 80px;
+}
+
+.header-left{
+  float: left;
+  width: 300px;
+  height: 80px;
+}
+
+.header-left img{
+  width: 100%;
+  height: auto;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.header-right{
+  float:right;
+  height: 80px;
+}
+
+.menu a{
+  display: block;
+  height: 80px;
+  color: #fff;
+  line-height: 80px;
+}
+
+.menu > li{
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+
+.menu a:hover{
+  background-color: #517CD8;
+  text-decoration: none;
+  color:#fff;
+}
+
+
+/* トップ画像 */
+
+.top-gazou{
+  height: 700px;
+  background-image: url(../img/sogo_uni.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  position: relative;
 }
 
-/*OK*/
-/*ヘッダーロゴの調整*/
-.header-logo{
-background-color:#ff0000;
-float:left;
-font-size:36px;
-padding: 20px 30px;
+.top-gazou h2{
+  position: absolute;
+  top:30%;
+  left:30%;
+  font-size: 36px;
+  color:#fff;
+  font-weight: bold;
+  background-color: #013ADF;
+  border-radius: 10%;
+  opacity: 0.8;
+  padding:10px 30px;
+  text-align: center;
+
 }
 
-/*ここから*/
-/*メインエリアの大きさ調整*/
+
+/* 紹介エリア */
+.shokai{
+  background-color: #CBECF1;
+  width:100%;
+  text-align: center;
+  margin-top:0;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color:#2e2e2e;
+}
+
+.shokai h2{
+  display: block;
+  width: 250px;
+  margin:0 auto 50px;
+  border:1px solid #bdbdbd;
+  border-radius: 20%;
+  background-color: #fff;
+  padding: 10px 30px;
+}
+
+.shokai-content{
+  border:1px solid #bdbdbd;
+  background-color: #fafafa;
+  width: 800px;
+  margin:70px auto;
+  padding-top: 15px;
+}
+
+.shokai-content img{
+  width: 100%;
+  height: auto;
+}
+
+.onkono{
+  margin:50px 0;
+}
+
+.parking{
+  background-color: #e6e6e6;
+}
+
+.about-parking{
+  background-color: #fff;
+  padding:50px;
+}
+
+.about-parking h3{
+  margin-bottom: 20px;
+}
+
+table{
+margin:0 auto 30px;
+/* 表の幅はこれでもOK↓ */
+/*width: 400px;*/
+}
+
+th,td{
+  width: 150px;
+}
+
+
+/* ふきだし */
+
+/* ふきだしのエリアを決める */
+.balloon5{
+  width: 100%;
+  margin:1.2em 0;
+  margin-bottom: 120px;
+}
+
+.balloon5 .faceicon{
+  float: right;
+  margin-right: 380px;　
+  margin-top:10px;
+  width: 120px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border:solid 3px #2E64FE;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting{
+  width: 100%;
+}
+
+.says{
+  display: inline-block;
+  position: relative;
+  margin:5px 0 0 380px;
+  padding:17px 13px ;
+  border-radius: 12px;
+  background:#fff;
+  margin-top:15px;
+}
+
+.says:after{
+  content:"";
+  display: inline-block;
+  position: absolute;
+  top:18px;
+  left: 425px;
+  border:12px solid transparent;
+  border-left: 18px solid #fff;
+}
+
+.says p{
+  margin:0;
+  padding:0;
+}
+
+
+
+.sample{
+  background-color: grey;
+  border:60px solid transparent;
+  border-top:60px solid #f00;
+  border-bottom:60px solid #f2f2f2;
+  border-left:60px solid yellow;
+  border-right:60px solid tomato;
+}
+
+.sankaku{
+  margin:50px;
+  width: 0;
+  height: 0;
+  border-top:100px solid green;
+  border-right:30px solid transparent;
+  border-bottom:30px solid transparent;
+  border-left:30px solid transparent;
+}
+
+.fukidashi{
+  background:#000;
+  color:#fff;
+  text-align: center;
+  width: 300px;
+  padding:8px 0;
+  border-radius: 12px;
+  position: relative;
+}
+
+.fukidashi:before{
+  content:"";
+  position: absolute;
+  bottom:-23px;
+  right:30 %;
+  border:12px solid transparent;
+  border-top:12px solid #000;
+}
+
+
+/* 取扱学校 */
+
+.gakko-wrapper{
+  width: 1100px;
+  margin:0 auto;
+  text-align: center;
+  padding:40px;
+}
+
+.gakko-wrapper h2{
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 36px;
+  color:#6e6e6e;
+}
+
+.shigaku,.kochu,.koko{
+  width: 70%;
+  margin:0 auto 20px;
+  height: 450px;
+  position: relative;
+}
+
+.gakko p{
+  position: absolute;
+  top:10%;
+  left:40%;
+  font-size:30px;
+  font-weight: bold;
+  color:#fff;
+}
+
+.gakko li{
+  color:#6e6e6e;
+}
+
+.shigaku{
+  background-image: url(../img/chugaku2.png);
+  background-size: cover;
+}
+
+.kochu{
+  background-image: url(../img/chugaku.png);
+  background-size: cover;
+}
+
+.koko{
+  background-image: url(../img/koko.png);
+  background-size: cover;
+}
+
+
+@media(max-width:1100px){
+  .balloon5{
+    display: none:;
+  }
+}
+
+/*メインエリアの大きさ調整
 .main{
  padding:100px 80px;
 }
 
-/*「for all staffs」の文字サイズ調整*/
+/*「for all staffs」の文字サイズ調整
 .copy-container h1{
 font-size:80px;
 }
 
-/*「学生服売場」タイトルの文字サイズ*/
+/*「学生服売場」タイトルの文字サイズ
 .copy-container h2{
 font-size:30px;
 }
 
-/*「学生服売場」のオレンジ色*/
+/*「学生服売場」のオレンジ色
 .copy-container span{
 color:orange;
 }
 
-/*制服写真の大きさ調整*/
+/*制服写真の大きさ調整
 .contents-item img{
 height:300px;
 width:240px;
 }
 
-/*「取扱い校多数」の下線と余白の調整*/
+/*「取扱い校多数」の下線と余白の調整
 .section-title{
 border-bottom :2px solid #dee7ec;
 font-size:28px;
@@ -55,38 +331,38 @@ padding-bottom:15px;
 margin-bottom:50px;
 }
 
-/*制服写真エリアの高さ調整*/
+/*制服写真エリアの高さ調整
 .contents{
 height:600px;
-/*制服写真エリアの上の余白の調整*/
+/*制服写真エリアの上の余白の調整
 margin-top:100px;
 }
 
-/*制服写真の左からの横並び*/
+/*制服写真の左からの横並び
 .contents-item{
 float:left;
 margin-right:40px;
 }
 
-/*制服写真のタイトル文字と余白の調整*/
+/*制服写真のタイトル文字と余白の調整
 .contents-item p{
 font-size:24px;
 margin-top:30px;
 text-align: center;
 }
 
-/*問い合わせフォームエリアの余白調整*/
+/*問い合わせフォームエリアの余白調整
 contact-form{
 padding-top:100px;
 }
 
-/*問い合わせフォームの調整*/
+/*問い合わせフォームの調整
 input,textarea{
-/*width:400px;*/
+/*width:400px;
 margin-top:10px;
 margin-bottom:10px;
 /*padding:20px;*/
-/*border:1px solid #dee7ec;*/
+/*border:1px solid #dee7ec;
 }
 
 .contact-submit{
@@ -204,7 +480,7 @@ box-shadow:2px 2px #0B3B0B;
 
 
 /*ここまで*/
-/*リストのスタイル*/
+/*リストのスタイル
 ul{
 list-style:none;
 }
@@ -250,7 +526,7 @@ padding-left:20px;
 text-align:center;
 }
 
-/*表のスタイル*/
+/*表のスタイル
 table,th,td{
 border:solid 1px black;
 border-collapse:collapse;

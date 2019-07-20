@@ -284,6 +284,10 @@ th,td{
       padding:20px;
     }
 
+.gakko-list ul{
+  padding:0;
+}
+
 .gakko li{
   color:#6e6e6e;
 }
